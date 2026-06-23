@@ -168,6 +168,13 @@ function openNetworkCard(url) { playClick(); window.open(url, '_blank'); }
 
 function abrirMenu() {
     playClick();
+    
+    // MEJORA: Enlaza el mapa superior con la ubicación exacta de CONFIG.maps de la agencia
+    const mapaInteractivo = document.getElementById('mapa-interactivo');
+    if (mapaInteractivo && CONFIG && CONFIG.maps) {
+        mapaInteractivo.src = `https://maps.google.com/maps?q=${encodeURIComponent(CONFIG.maps)}&output=embed`;
+    }
+    
     document.getElementById('miMenuContacto').style.display = 'flex';
 }
 
