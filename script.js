@@ -168,30 +168,12 @@ function openNetworkCard(url) { playClick(); window.open(url, '_blank'); }
 
 function abrirMenu() {
     playClick();
-    
-    // CONEXIÓN DINÁMICA DEL MAPA SUPERIOR CON LA AGENCIA CONFIGURADA
-    const mapaInteractivo = document.getElementById('mapa-interactivo');
-    if (mapaInteractivo && typeof CONFIG !== 'undefined' && CONFIG.maps) {
-        try {
-            let embedUrl = "";
-            // Si el link de CONFIG.maps es de compartir o contiene parámetros de lugar, extraemos la data
-            if (CONFIG.maps.includes("pb=")) {
-                const match = CONFIG.maps.match(/pb=[^&]+/);
-                embedUrl = `https://www.google.com/maps/embed?${match ? match[0] : ''}`;
-            } else {
-                // Formato de respaldo nativo de Google Embed para cargar la ubicación exacta sin bloqueos
-                const busquedaDestino = CONFIG.sitioWeb ? CONFIG.sitioWeb.replace('https://', '').replace('www.', '') : "Volkswagen Rafedher Aguascalientes";
-                embedUrl = `https://www.google.com/maps/embed/v1/place?key=&q=${encodeURIComponent(busquedaDestino)}&zoom=16`;
-            }
-            
-            // Asignamos la URL limpia y compatible al iframe
-            mapaInteractivo.src = embedUrl;
-        } catch (error) {
-            console.error("Error al renderizar el mapa interactivo:", error);
-        }
-    }
-    
     document.getElementById('miMenuContacto').style.display = 'flex';
+}
+
+function cerrarMenu() {
+    document.getElementById('miMenuContacto').style.display = 'none';
+    document.querySelectorAll('.sucursal-panel-content').forEach(panel => panel.style.display = 'none');
 }
 
 function cerrarMenu() {

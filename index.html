@@ -90,24 +90,22 @@
                 </button>
             </div>
 
-            <!-- MENÚ DE CONTACTO - SE GENERA DINÁMICAMENTE POR SCRIPT -->
+           <!-- MENÚ DE CONTACTO - SE GENERA DINÁMICAMENTE POR SCRIPT -->
             <div id="miMenuContacto" class="menu-oculto" onclick="cerrarMenu()">
                 <div class="menu-contenido" onclick="event.stopPropagation()">
                     <div class="bloque-mapa-guia" style="text-align: center; padding: 5px 0 15px 0; width: 100%;">
                         <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; text-transform: uppercase; margin-bottom: 4px; font-family: 'Montserrat', sans-serif;">Contacta a tu Asesor Digital</h3>
                         <p style="font-size: 0.7rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; font-family: 'Montserrat', sans-serif; padding: 0 10px;">Elige cualquiera de nuestras sucursales para recibir atención inmediata.</p>
                         
-                        <div class="mapa-wrapper" style="width: 100%; border-radius: 8px; overflow: hidden; border: 1px solid var(--brand-accent); box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-                            <iframe 
-                                id="mapa-interactivo"
-                                src="https://maps.app.goo.gl/9hcu9sunpQvjCrTz9" 
-                                width="100%" 
-                                height="180" 
-                                style="border:0; display: block;" 
-                                allowfullscreen="" 
-                                loading="lazy">
-                            </iframe>
-                        </div>
+                        <!-- BOTÓN DE CÓMO LLEGAR DIRECTO CON TU LINK (SUSTITUYE AL IFRAME PROBLEMÁTICO) -->
+                        <a id="boton-como-llegar-principal" 
+                           href="https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" 
+                           target="_blank" 
+                           class="btn-menu maps-btn" 
+                           style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 12px; font-weight: bold; background-color: #f80101; color: white; border-radius: 8px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border: 1px solid var(--brand-accent);"
+                           onclick="playClick()">
+                            <i class="fas fa-location-arrow"></i> CÓMO LLEGAR A LA AGENCIA
+                        </a>
                     </div>
 
                     <!-- Contenedor inyectado por JS -->
