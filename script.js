@@ -22,12 +22,12 @@ const CONFIG = {
         cat3: { t: "CLIENTES FELICES", c: "Nuestra prioridad absoluta es tu satisfacción total. La comunidad de conductores de Aguascalientes respalda el compromiso, la confianza y la atención de primer nivel que nos caracteriza como tu concesionario autorizado de confianza." }
     },
     sucursales: {
-        suc1: { nombre: "Asesor 1", wa: "5214491472336", maps: "https://maps.app.goo.gl/J4jpWBkAsqeWLBgd9" },
-        suc2: { nombre: "Asesor 2", wa: "5214491472336", maps: "https://maps.app.goo.gl/J4jpWBkAsqeWLBgd9" },
-        suc3: { nombre: "Asesor 3", wa: "5214491472336", maps: "https://maps.app.goo.gl/J4jpWBkAsqeWLBgd9" },
-        suc4: { nombre: "Asesor 4", wa: "5214491472336", maps: "https://maps.app.goo.gl/J4jpWBkAsqeWLBgd9" },
-        suc5: { nombre: "Asesor 5", wa: "5214491472336", maps: "https://maps.app.goo.gl/J4jpWBkAsqeWLBgd9" },
-        suc6: { nombre: "Asesor 6", wa: "5214491472336", maps: "https://maps.app.goo.gl/J4jpWBkAsqeWLBgd9" }
+        suc1: { nombre: "Asesor 1", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
+        suc2: { nombre: "Asesor 2", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
+        suc3: { nombre: "Asesor 3", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
+        suc4: { nombre: "Asesor 4", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
+        suc5: { nombre: "Asesor 5", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
+        suc6: { nombre: "Asesor 6", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" }
     }
 };
 
@@ -103,7 +103,7 @@ function renderGallery(cat) {
         videoContainer.style.cssText = "display: flex; gap: 10px; margin-top: 15px; justify-content: center; width: 100%; flex-wrap: wrap;";
         videoContainer.innerHTML = `
             <a href="https://www.youtube.com/shorts/-tFv9e-gRKA" target="_blank" style="background: #000; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 0.7rem; border: 1px solid var(--brand-accent);">Opinión de nuestros clientes</a>
-            <a href="https://www.youtube.com/shorts/Z5MGeUveHb0" target="_blank" style="background: #000; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 0.7rem; border: 1px solid var(--brand-accent);">Viviendo un Volkswagen</a>
+            <a href="https://www.youtube.com/shorts/Z5MGeUveHb0" target="_blank" style="background: #000; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 0.7rem; border: 1px solid var(--brand-accent);">El respaldo de tu Chirey</a>
         `;
         grid.appendChild(videoContainer);
     }
@@ -207,10 +207,10 @@ function inicializarAcordeon() {
         panel.className = 'sucursal-panel-content';
         panel.innerHTML = `
             <div class="sucursal-info-block">
-                <p class="suc-domicilio"><i class="fas fa-user-tie"></i> Ejecutivo de Ventas Digitales Volkswagen</p>
+                <p class="suc-domicilio"><i class="fas fa-user-tie"></i> Ejecutivo de Ventas Digitales Chirey</p>
                 <p class="suc-horario"><i class="far fa-clock"></i> 9:00 AM a 8:00 PM | Atención Personalizada</p>
             </div>
-            <a href="https://wa.me/${suc.wa}?text=Hola!%20Me%20interesa%20cotizar%20un%20veh%C3%ADculo%20Volkswagen%20y%20agendar%20una%20prueba%20de%20manejo." target="_blank" class="btn-menu whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://wa.me/${suc.wa}?text=Hola!%20Me%20interesa%20cotizar%20un%20veh%C3%ADculo%20Chirey%20y%20agendar%20una%20prueba%20de%20manejo." target="_blank" class="btn-menu whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="${suc.maps}" target="_blank" class="btn-menu maps-btn"><i class="fas fa-location-arrow"></i> Cómo Llegar</a>
         `;
         
@@ -228,6 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function shareExperienceRobust() {
-    try { await navigator.share({ title: 'RAFEDHER Volkswagen Aguascalientes', url: window.location.href }); }
+    try { await navigator.share({ title: 'Chirey Aguascalientes', url: window.location.href }); }
     catch { playClick(); navigator.clipboard.writeText(window.location.href).then(() => { alert("¡Enlace de tarjeta copiado!"); }); }
 }

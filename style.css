@@ -1,11 +1,11 @@
 :root {
-    --brand-accent: #00b0f0; /* Azul Eléctrico Digital VW */
-    --brand-secondary: #001e50; /* Azul Marino Profundo Corporativo VW */
-    --bg-premium: #0a0f18; /* Fondo Sólido Premium Dark */
-    --gold-gradient: linear-gradient(135deg, #001e50 0%, #004b87 50%, #00b0f0 100%); /* Gradiente VW Institucional */
-    --bg-card-dark: #101726; /* Tarjetas esmeriladas corporativas */
-    --mar-claro: #00b0f0;
-    --cielo-profundo: #001e50;
+    --brand-accent: #00f0ff; /* Azul Eléctrico / Cyan Premium */
+    --brand-secondary: #0077ff; /* Azul Metálico de Acento */
+    --bg-premium: #0d1117; /* Gris Oxford Oscuro Profundo */
+    --gold-gradient: linear-gradient(135deg, #002d62 0%, #0077ff 50%, #00f0ff 100%); /* Gradiente Tecnológico */
+    --bg-card-dark: #161b22; /* Fondo de tarjetas esmeriladas */
+    --mar-claro: #00f0ff;
+    --cielo-profundo: #0d1117;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -15,7 +15,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
 
 .main-hub { height: 100vh; padding: 5px 10px; display: flex; flex-direction: column; align-items: center; overflow: hidden; justify-content: flex-start; gap: 4px; }
 
-.magazine-header { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 2px 5px 2px 45px; border-bottom: 1px solid rgba(0,176,240,0.3); margin-bottom: 4px; }
+.magazine-header { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 2px 5px 2px 45px; border-bottom: 1px solid rgba(0,240,255,0.3); margin-bottom: 4px; }
 .header-title-container { display: flex; flex-direction: column; gap: 1px; }
 .agency-name { font-family: 'Bebas Neue'; font-size: 0.95rem; color: var(--brand-accent); letter-spacing: 1.5px; }
 .agency-logo { width: 22px; }
@@ -23,18 +23,18 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
 .download-track-container { display: flex; flex-direction: column; gap: 1px; margin-top: 1px; }
 .download-text { font-size: 0.48rem; color: #ffffff; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
 .btn-download-audio { display: inline-flex; align-items: center; justify-content: center; gap: 4px; background: transparent; border: 1px solid var(--brand-accent); color: var(--brand-accent); padding: 2px 6px; border-radius: 5px; font-size: 0.5rem; font-weight: 800; text-decoration: none; width: fit-content; transition: background 0.2s ease; }
-.btn-download-audio:active { background: rgba(0, 176, 240, 0.2); }
+.btn-download-audio:active { background: rgba(0, 240, 255, 0.2); }
 
 .mosaic-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 6px; width: 100%; max-width: 380px; }
 .hero-block { grid-column: 1 / -1; height: 105px; position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; border: 2px solid var(--brand-accent); } 
 .hero-block img { width: 100%; height: 100%; object-fit: cover; }
 .hero-overlay { position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, #000); padding: 6px; }
-.edition-label { font-size: 0.52rem; color: var(--brand-accent); font-weight: 900; }
+.edition-label { font-size: 0.52rem; color: var(--brand-secondary); font-weight: 900; }
 .hero-title { font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important; font-size: 1.35rem; line-height: 1.2; font-style: normal; }
 
 .menu-block { grid-column: 1 / -1; }
 .magazine-menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-.mag-btn { background: var(--bg-card-dark); border: 1px solid rgba(0, 176, 240, 0.4); color: #fff; padding: 6px; border-radius: 8px; text-align: left; font-family: 'Bebas Neue'; font-size: 0.72rem; display: flex; align-items: center; gap: 6px; cursor: pointer; backdrop-filter: blur(10px); }
+.mag-btn { background: var(--bg-card-dark); border: 1px solid rgba(0, 240, 255, 0.4); color: #fff; padding: 6px; border-radius: 8px; text-align: left; font-family: 'Bebas Neue'; font-size: 0.72rem; display: flex; align-items: center; gap: 6px; cursor: pointer; backdrop-filter: blur(10px); }
 .mag-btn .num { color: var(--brand-accent); font-style: italic; font-size: 0.65rem; }
 
 .video-block { grid-column: 1 / -1; background: var(--bg-card-dark); border-radius: 10px; padding: 4px; display: flex; flex-direction: column; gap: 4px; border: 1px solid var(--brand-accent); cursor: pointer; backdrop-filter: blur(10px); }
@@ -44,7 +44,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
 .block-label { font-family: 'Bebas Neue'; font-size: 0.6rem; text-align: center; color: var(--brand-accent); }
 
 .lead-block { grid-column: 1 / -1; }
-.btn-shiny-gold { width: 100%; height: 38px; border-radius: 10px; border: none; background: var(--gold-gradient); color: #fff; font-weight: 900; font-size: 0.72rem; position: relative; overflow: hidden; cursor: pointer; box-shadow: 0 0 15px rgba(0, 176, 240, 0.3); }
+.btn-shiny-gold { width: 100%; height: 38px; border-radius: 10px; border: none; background: var(--gold-gradient); color: #fff; font-weight: 900; font-size: 0.72rem; position: relative; overflow: hidden; cursor: pointer; box-shadow: 0 0 15px rgba(0, 240, 255, 0.3); }
 
 .share-block { grid-column: 1 / -1; }
 .btn-magazine-share { width: 100%; height: 32px; background: transparent; border: 1px solid var(--brand-accent); color: #fff; border-radius: 10px; font-weight: 800; font-size: 0.58rem; cursor: pointer; }
@@ -53,7 +53,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
 
 /* OPTIMIZACIÓN Y AJUSTE DE TAMAÑO PARA EL BOTÓN REUBICADO "VIVE CON NOSOTROS LA EVOLUCION" */
 .btn-custom-action { width: 100%; height: 44px; background: #000; border-radius: 10px; font-weight: 900; font-size: 0.74rem; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; letter-spacing: 0.5px; }
-.btn-recommended-businesses { border: 2px solid var(--brand-accent); color: var(--brand-accent); box-shadow: inset 0 0 12px rgba(0, 176, 240, 0.3), 0 0 8px rgba(0, 176, 240, 0.15); }
+.btn-recommended-businesses { border: 2px solid var(--brand-accent); color: var(--brand-accent); box-shadow: inset 0 0 12px rgba(0, 240, 255, 0.3), 0 0 8px rgba(0, 240, 255, 0.15); }
 
 .credits-altpro-compact { margin-top: 4px; padding: 0; display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important; gap: 8px; width: 100%; }
 .produced-by { font-size: 0.58rem; font-weight: 900; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.5px; }
@@ -67,7 +67,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
 .qr-embedded-img { width: 100px; height: 100px; display: block; border-radius: 6px; background: #fff; padding: 4px; object-fit: contain; }
 .btn-download-qr-integrated { width: 100%; height: 32px; text-decoration: none; background: var(--gold-gradient); color: #ffffff; border: none; border-radius: 6px; font-size: 0.6rem; font-weight: 900; display: inline-flex; align-items: center; justify-content: center; gap: 4px; text-transform: uppercase; letter-spacing: 0.5px; transition: opacity 0.2s; }
 
-.content-overlay { position: fixed; inset: 0; background: rgba(10, 15, 24, 0.98); z-index: 5000; padding: 60px 10px 10px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; }
+.content-overlay { position: fixed; inset: 0; background: rgba(13, 17, 23, 0.98); z-index: 5000; padding: 60px 10px 10px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; }
 
 /* CARRUSEL Y ZOOM MEJORADOS */
 .carousel-zigzag-grid { display: flex; overflow-x: auto; gap: 15px; padding: 20px; scroll-snap-type: x mandatory; width: 100%; }
@@ -100,7 +100,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
 .network-modal-title { font-family: 'Bebas Neue'; font-size: 1.6rem; color: var(--brand-accent); letter-spacing: 1px; margin-bottom: 4px; }
 .network-modal-subtitle { font-size: 0.65rem; color: rgba(255,255,255,0.6); text-transform: uppercase; margin-bottom: 20px; font-weight: 600; }
 .network-buttons-grid { display: grid; grid-template-columns: 1fr; gap: 10px; width: 100%; }
-.btn-network-link { width: 100%; height: 46px; background: rgba(0,0,0,0.4); border: 1px solid rgba(0,176,240,0.2); border-radius: 10px; color: #fff; font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; transition: all 0.2s ease; text-transform: uppercase; }
+.btn-network-link { width: 100%; height: 46px; background: rgba(0,0,0,0.4); border: 1px solid rgba(0,240,255,0.2); border-radius: 10px; color: #fff; font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; transition: all 0.2s ease; text-transform: uppercase; }
 
 /* NUEVO MENÚ DE CONTACTO - ACORDEÓN SUCURSALES */
 .menu-oculto {
@@ -110,7 +110,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
     left: 0; 
     width: 100%; 
     height: 100%; 
-    background: rgba(10, 15, 24, 0.95); 
+    background: rgba(13, 17, 23, 0.95); 
     z-index: 9999; 
     flex-direction: column; 
     align-items: center; 
@@ -150,7 +150,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
     flex-direction: column;
     gap: 8px;
     padding: 5px 10px 10px 10px;
-    background: rgba(0, 176, 240, 0.05);
+    background: rgba(0, 240, 255, 0.05);
     border-left: 2px solid var(--brand-accent);
     margin-bottom: 5px;
 }
@@ -167,7 +167,7 @@ body { background-color: var(--bg-premium); font-family: 'Montserrat', sans-seri
     display: block;
 }
 .whatsapp { background-color: #25d366; }
-.maps-btn { background-color: #004b87; }
+.maps-btn { background-color: #0077ff; }
 .btn-cerrar { margin-top: 15px; padding: 12px; background: #222; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
 
 /* CUADRÍCULA DE IMÁGENES GALERÍA */
