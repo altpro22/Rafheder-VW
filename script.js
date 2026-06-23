@@ -22,12 +22,12 @@ const CONFIG = {
         cat3: { t: "CLIENTES FELICES", c: "Nuestra prioridad absoluta es tu satisfacción total. La comunidad de conductores de Aguascalientes respalda el compromiso, la confianza y la atención de primer nivel que nos caracteriza como tu concesionario autorizado de confianza." }
     },
     sucursales: {
-        suc1: { nombre: "Asesor 1", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
-        suc2: { nombre: "Asesor 2", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
-        suc3: { nombre: "Asesor 3", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
-        suc4: { nombre: "Asesor 4", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
-        suc5: { nombre: "Asesor 5", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" },
-        suc6: { nombre: "Asesor 6", wa: "5214491472336", maps: "https://maps.app.goo.gl/EjXcrp2N6VLkBkTG9" }
+        suc1: { nombre: "Asesor 1", wa: "5214491472336", maps: "https://maps.app.goo.gl/YzzGiu1ENCeL9NzU6" },
+        suc2: { nombre: "Asesor 2", wa: "5214491472336", maps: "https://maps.app.goo.gl/YzzGiu1ENCeL9NzU6" },
+        suc3: { nombre: "Asesor 3", wa: "5214491472336", maps: "https://maps.app.goo.gl/YzzGiu1ENCeL9NzU6" },
+        suc4: { nombre: "Asesor 4", wa: "5214491472336", maps: "https://maps.app.goo.gl/YzzGiu1ENCeL9NzU6" },
+        suc5: { nombre: "Asesor 5", wa: "5214491472336", maps: "https://maps.app.goo.gl/YzzGiu1ENCeL9NzU6" },
+        suc6: { nombre: "Asesor 6", wa: "5214491472336", maps: "https://maps.app.goo.gl/YzzGiu1ENCeL9NzU6" }
     }
 };
 
